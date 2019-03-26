@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">First</string>
+    <string name="lab">result</string>
     <string name="shuchu"> </string>
-    <string name="shuru">hi
-
-    </string>
+    <string name="shuru">hi</string>
+    <string name="bu"> </string>
 </resources>
