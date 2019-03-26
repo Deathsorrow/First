@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name" translatable="false">First</string>
-    <string name="welcome">welcome</string>
-    <string name="Amazing" translatable="false">Forever Love</string>
+    <string name="app_name">First</string>
+    <string name="shuchu"> </string>
+    <string name="shuru">hi
+
+    </string>
 </resources>

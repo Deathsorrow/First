@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">First</string>
+    <string name="app_name">结果=</string>
     <string name="welcome">欢迎</string>
+    <string name="name" translatable="false">请输入摄氏度</string>
+    <string name="shuru">请输入摄氏度</string>
+    <string name="shuchu">" "</string>
 </resources>
