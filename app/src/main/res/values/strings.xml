@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">First</string>
-    <string name="lab">result</string>
-    <string name="shuchu"> </string>
-    <string name="shuru">hi</string>
-    <string name="bu"> </string>
+    <string name="app_name">Hello</string>
+    <string name="name" translatable="false">TeamA</string>
+    <string name="fenshu" translatable="false">  0</string>
+    <string name="jiasan" translatable="false">+3 POINTS </string>
+    <string name="jiaer" translatable="false">+2 POINTS </string>
+    <string name="jiayi" translatable="false">+1 POINTS </string>
+    <string name="qingling" translatable="false">RESET </string>
 </resources>
