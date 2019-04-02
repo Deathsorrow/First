@@ -6,4 +6,10 @@
     <string name="jiaer" translatable="false">+2 POINTS </string>
     <string name="jiayi" translatable="false">+1 POINTS </string>
     <string name="qingling" translatable="false">RESET </string>
+    <string name="btn_dollar_label" translatable="false">Dollar</string>
+    <string name="btn_euro_label" translatable="false">Euro</string>
+    <string name="btn_won_label" translatable="false">Won</string>
+    <string name="rmb_hint" translatable="false">Input RMB</string>
 </resources>
+
+
