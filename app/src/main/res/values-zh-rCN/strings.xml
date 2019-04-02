@@ -2,7 +2,7 @@
 <resources>
     <string name="shuru">请输入摄氏度</string>
     <string name="shuchu">" "</string>
-    <string name="app_name">摄氏度转换为华氏度</string>
+    <string name="app_name">篮球赛计分器</string>
     <string name="lab">结果=</string>
     <string name="bu">确定</string>
 </resources>

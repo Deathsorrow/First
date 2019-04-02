@@ -5,71 +5,144 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="107dp"
-        android:layout_height="35dp"
-        android:layout_alignStart="@+id/btn0"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="-14dp"
-        android:layout_marginTop="52dp"
-        android:text="@string/name"
-        android:textSize="30sp" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/name"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText" />
 
 
-    <TextView
-        android:id="@+id/tetout"
-        android:layout_width="117dp"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btn0"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="-18dp"
-        android:layout_marginTop="95dp"
-        android:singleLine="true"
-        android:text="@string/fenshu"
-        android:textSize="40sp" />
+            <TextView
+                android:id="@+id/tetout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="@string/fenshu"
+                android:textSize="65sp"
+                tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/btn3"
-        android:layout_width="261dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="-194dp"
-        android:layout_marginTop="169dp"
-        android:layout_toEndOf="@+id/tetout"
-        android:text="@string/jiasan" />
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="?android:attr/autofilledHighlight"
+                android:text="@string/jiasan" />
 
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="261dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn3"
-        android:layout_marginStart="-195dp"
-        android:layout_marginTop="23dp"
-        android:layout_toEndOf="@+id/tetout"
-        android:text="@string/jiaer" />
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="?android:attr/autofilledHighlight"
+                android:text="@string/jiaer" />
 
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="261dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn2"
-        android:layout_marginStart="-194dp"
-        android:layout_marginTop="21dp"
-        android:layout_toEndOf="@+id/tetout"
-        android:text="@string/jiayi" />
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="?android:attr/autofilledHighlight"
+                android:text="@string/jiayi" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="TeamB"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/tetoutb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="@string/fenshu"
+                android:textSize="65sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btn3b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="?android:attr/autofilledHighlight"
+                android:text="@string/jiasan" />
+
+            <Button
+                android:id="@+id/btn2b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="?android:attr/autofilledHighlight"
+                android:text="@string/jiaer" />
+
+            <Button
+                android:id="@+id/btn1b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="?android:attr/autofilledHighlight"
+                android:text="@string/jiayi" />
+        </LinearLayout>
+
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn0"
         android:layout_width="77dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/btn1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
-        android:layout_marginBottom="59dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginRight="142dp"
+        android:layout_marginBottom="37dp"
+        android:background="@android:drawable/btn_star_big_on"
         android:text="@string/qingling" />
 
 
