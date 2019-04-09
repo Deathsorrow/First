@@ -40,8 +40,16 @@
         android:layout_height="wrap_content" />
     <Button
         android:id="@+id/btn_won"
-        android:onClick="openOne"
+        android:onClick="OnClick"
         android:text="@string/btn_won_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_opencfg"
+        android:onClick="openOne"
+        android:text="config"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

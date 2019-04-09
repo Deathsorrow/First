@@ -10,6 +10,8 @@
     <string name="btn_euro_label" translatable="false">Euro</string>
     <string name="btn_won_label" translatable="false">Won</string>
     <string name="rmb_hint" translatable="false">Input RMB</string>
+    <string name="btn_save_label" translatable="false">Save</string>
+    <string name="menu_set_label">Setting</string>
 </resources>
 
 
