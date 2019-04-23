@@ -1,21 +1,17 @@
 package com.example.hp.first;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-
-import static com.example.hp.first.R.id.btn0;
-import static com.example.hp.first.R.id.btn1;
-import static com.example.hp.first.R.id.btn2;
-import static com.example.hp.first.R.id.btn3;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView out;
     TextView outb;
+    String  result ="";
+    String  resultb ="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +36,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btn1b=findViewById(R.id.btn1b);
         btn1b.setOnClickListener(this);
 
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        String scorea=result;
+        String scoreb=resultb;
+        outState.putString("teama_score",scorea);
+        outState.putString("teamb_score",scoreb);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        String scorea=savedInstanceState.getString("teama_score");
+        String scoreb=savedInstanceState.getString("teamb_score");
+        result = scorea;
+        resultb = scoreb;
     }
 
     @Override
@@ -75,10 +89,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
               break;
         }
-        String  result = String.valueOf(total);
+        result = String.valueOf(total);
         out.setText(result);
 
-        String  resultb = String.valueOf(totalb);
+        resultb = String.valueOf(totalb);
         outb.setText(resultb);
     }
 }
