@@ -23,7 +23,11 @@
         <activity android:name=".RateListActivity" />
         <activity android:name=".MyListActivity" />
         <activity android:name=".MyList2Activity" />
-        <activity android:name=".RateCalcActivity"></activity>
+        <activity android:name=".RateCalcActivity" android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".PhotoActivity" />
+        <activity android:name=".loginActivity">
+        </activity>
+        <activity android:name=".RegisterActivity"></activity>
     </application>
 
 </manifest>
