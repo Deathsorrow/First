@@ -10,6 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".RateActivity">
@@ -23,11 +24,9 @@
         <activity android:name=".RateListActivity" />
         <activity android:name=".MyListActivity" />
         <activity android:name=".MyList2Activity" />
-        <activity android:name=".RateCalcActivity" android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
-        <activity android:name=".PhotoActivity" />
-        <activity android:name=".loginActivity">
-        </activity>
-        <activity android:name=".RegisterActivity"></activity>
+        <activity
+            android:name=".RateCalcActivity"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
     </application>
 
 </manifest>

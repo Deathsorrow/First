@@ -34,7 +34,7 @@ public class RateActivity extends AppCompatActivity implements Runnable{
     EditText rmb;
     TextView show;
     Handler handler;
-    private final String TAG="Rate";
+    private final String TAG="Rate111";
     private  float dollarRate =0.15f;
     private  float euroRate =0.13f;
     private  float wonRate =170.31f;
@@ -65,6 +65,7 @@ public class RateActivity extends AppCompatActivity implements Runnable{
         Log.i(TAG,"onCreate:sp euroRate="+wonRate);
         Log.i(TAG,"onCreate:sp todayStr="+todayStr);
 
+        updatedate = "111";
         //判断时间
         if(!todayStr.equals(updatedate)){
             Log.i(TAG, "onCreate: 需要更新");
@@ -186,8 +187,20 @@ public class RateActivity extends AppCompatActivity implements Runnable{
             openConfig();
         }else if(item.getItemId()==R.id.open_list){
             //打开列表窗口
-            Intent list = new Intent(this,MyList2Activity.class);
+            Intent list = new Intent(this,RateListActivity.class);
             startActivity(list);
+            //测试数据库
+            //RateItem item1 = new RateItem("aaa","123");
+            //RateManager manager = new RateManager(this);
+            //manager.add(item1);
+            //manager.add(new RateItem("bbbb","23.5"));
+            //Log.i(TAG, "onOptionsItemSelected: 写入数据完毕");
+
+            //查询所有数据
+            //List<RateItem> testList = manager.listAll();
+            //for (RateItem i:testList){
+             //   Log.i(TAG, "onOptionsItemSelected: 取出数据[id="+i.getId()+"]Name=" + i.getCurName() + "Rate=" +i.getCurRate());
+            //}
         }
         return super.onOptionsItemSelected(item);
     }
