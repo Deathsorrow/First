@@ -112,6 +112,7 @@ public class RateListActivity extends ListActivity implements Runnable{
 
                 //把数据写入到数据库中
                 RateManager manager = new RateManager(this);
+                manager.deleteAll();
                 manager.addAll(rateList);
 
                 //记录更新日期
