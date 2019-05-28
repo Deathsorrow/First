@@ -11,8 +11,12 @@
     <string name="btn_won_label" translatable="false">Won</string>
     <string name="rmb_hint" translatable="false">Input RMB</string>
     <string name="btn_save_label" translatable="false">Save</string>
-    <string name="menu_set_label">Setting</string>
-    <string name="label_open_list">OpenList</string>
+    <string name="menu_set_label" translatable="false">Setting</string>
+    <string name="label_open_list" translatable="false">OpenList</string>
+    <string name="rdo_home_label" translatable="false">首页</string>
+    <string name="rdo_func_label" translatable="false">功能</string>
+    <string name="rdo_setting_label" translatable="false">设置</string>
+
 </resources>
 
 
